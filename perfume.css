@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    /* Fondo degradado tipo miel */
+    background: radial-gradient(circle at center, #ffdb6e 0%, #f7a01b 60%, #b35d00 100%);
+    background-attachment: fixed;
+    color: #4a2c00; /* Marrón oscuro para contraste */
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+}
+
+.titulo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #4a2c00;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+}
+
+.grid-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.tarjeta {
+    /* Efecto cristal (Glassmorphism) */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px; /* Bordes más redondeados y suaves */
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.tarjeta:hover {
+    transform: translateY(-15px) scale(1.02);
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 20px 40px rgba(139, 69, 19, 0.3);
+}
+
+.tarjeta img {
+    width: 80%;
+    height: 250px;
+    object-fit: contain; /* Para que el frasco se vea completo */
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+}
+
+.contenido h3 {
+    margin-top: 15px;
+    color: #3d1f00;
+}
+
+.contenido p {
+    font-size: 0.85rem;
+    color: #5d3a1a;
+    line-height: 1.5;
+}
+
+.btn-ver {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: 1.5px solid #4a2c00;
+    color: #4a2c00;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-ver:hover {
+    background: #4a2c00;
+    color: #ffdb6e;
+}

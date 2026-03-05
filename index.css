@@ -1,0 +1,85 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom, #ffffff 0%, #add8e6 100%);
+    background-attachment: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+}
+.grid-tarjetas{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+.tarjeta {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.tarjeta img {
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+}
+.contenido {
+    padding: 20px;
+}
+
+.contenido h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.contenido p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 28px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.boton:hover{
+    background-color: #0056b3;
+}

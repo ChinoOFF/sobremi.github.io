@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #000;
+    background-image: 
+        radial-gradient(circle at bottom, #720000 0%, #1a0000 50%, #000000 100%);
+    overflow-x: hidden;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.fuego-overlay {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(255, 69, 0, 0.2) 0%, transparent 40%);
+    animation: llamarada 2s infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes llamarada {
+    0% { opacity: 0.3; }
+    100% { opacity: 0.8; }
+}
+
+.titulo {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.titulo h1 {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 
+        0 0 10px #ff4500,
+        0 0 20px #ff4500,
+        0 0 40px #e40808;
+
+}
+
+.sangre {
+    color: #e40808;
+}
+
+
+
+.grid-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.tarjeta {
+    background: #0a0a0a;
+    border: 3px solid #330000;
+    width: 300px;
+    transition: 0.3s;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,1);
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px) scale(1.05);
+    border-color: #ff4500;
+    box-shadow: 0 0 40px #ff450088;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: sepia(100%) saturate(300%) hue-rotate(-30deg); /* Efecto quemado/rojo */
+}
+
+.contenido {
+    padding: 20px;
+    background: #000;
+    color: white;
+}
+
+.contenido h3 {
+    color: #ff4500;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.btn-ver {
+    display: block;
+    margin-top: 15px;
+    background: #e40808;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 5px 0 #800000;
+}
+
+.btn-ver:hover {
+    background: #ff4500;
+    transform: scale(0.98);
+}
